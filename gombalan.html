@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gombalan Romantis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    .gombalan {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body onclick="playSound()">
+
+  <h1>🌹 Gombalan Romantis 🌹</h1>
+  <div class="gombalan">
+    "Kamu tahu nggak? Senyuman kamu itu kayak lagu favorit aku…<br>
+    Nggak pernah bosen didengerin, selalu bikin hati tenang ❤️"
+  </div>
+
+  <audio id="romanticSound" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio tag.
+  </audio>
+
+  <script>
+    function playSound() {
+      document.getElementById('romanticSound').play();
+    }
+  </script>
+
+</body>
+</html>
